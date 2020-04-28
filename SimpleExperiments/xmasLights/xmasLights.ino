@@ -1,7 +1,8 @@
 /*
  * Author: Jason Hillinger
- * Title: Light Cycle
- * This piece of code alternates between 3 LED lights and illuminates one of them at a time
+ * Title: xMas Lights
+ * This piece of code alternates between 3 LED lights and illuminates one of them at a time.
+ * The lights will mimic xmas ligths, even more so if you use green, red and blue LEDs!
  */
 
 int lightA = 3;     //pin numbers for each light
