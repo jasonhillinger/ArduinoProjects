@@ -1,0 +1,2 @@
+Simply install the circuit found in pulsingLightCircuit.png and upload the
+code found in pulsingLight.ino onto the Arduino through the Arduino IDE.
