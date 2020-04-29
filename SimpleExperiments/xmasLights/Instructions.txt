@@ -1,4 +1,5 @@
 To do this experiment, you must first create the circuit found in
 xmasLightsCircuit.png.
 
-The code in xmasLights.ino must also be downloaded onto the Arduino Uno. 
+The code in xmasLights.ino must also be uploaded onto the Arduino Uno, through
+the Arduino LED.
