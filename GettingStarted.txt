@@ -6,7 +6,7 @@ command in the terminal, the use the command ./install.sh
 One final step in order to give the Arduino usb privileges, is to type the following command into the terminal.
 
 sudo adduser USER dialout
-sudo usermod -a -G uucp $USER
+sudo usermod -a -G dialout $USER
 
 (Replace USER with your user name, but DO NOT erase the $ sign)
 

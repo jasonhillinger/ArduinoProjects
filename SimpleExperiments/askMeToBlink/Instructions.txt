@@ -1,0 +1,3 @@
+Create the circuit askMeToBlink.png, then open the Serial Monitor through the Arduino IDE by pressing CTRL+SHIFT+M
+The settings should be set to "No Line Ending" and "9600 baud" within the Serial Monitor.
+Now upload the code onto the Arduino, and follow the directions through the Serial Monitor.
