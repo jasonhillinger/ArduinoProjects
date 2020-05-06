@@ -1,10 +1,7 @@
 This experiment was to successfully connect two switches to the Arduino that will control the direction of a stepper motor.
 Since this experiment will be considered intermediate, it will require a little more preparation than the other experiments
 found in the SimpleExperiments folder. After collecting the materials for the experiment, connect the circuits as done in
-switchCircuits.png and ___.png
-
-//TODO add png name after creating circuit design
-
+switchCircuits.png and mainCircuit.png
 
 //MATERIALS//
 -----------------------------------------------------------------------------------------------------------------------------
