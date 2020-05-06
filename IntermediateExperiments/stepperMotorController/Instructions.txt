@@ -40,3 +40,14 @@ also connect the Arduino to the computer.
 
 Step 6:
 Upload the code provided in stepperMotorController.ino
+
+--Operating the circuit--
+
+Step 7:
+Press the power switch on the 3.3V/5V control board to turn on the motor, a green light should appear when done so.
+Press one of the switches and observe results.
+
+//RESULTS//
+-----------------------------------------------------------------------------------------------------------------------------
+The step motor will preform a 180 degree rotation once a button is pushed. Once the rotation is complete, another button
+press could be done to do another rotation. Direction of the rotation is dependent on the button.
