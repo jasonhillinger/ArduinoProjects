@@ -1,13 +1,14 @@
 /*
  * Author: Jason Hillinger
  * Title: Stepper Motor Controller
- *
+ * This experiment was made in attempt to create a circuit that works in the same fashion as a garage door opener. Press
+ * button A and the motor rotates to one direction, press button B and the motor rotates in the opposite direction.
  */
 #include <Stepper.h>
 //Stepper Motor Variables//
 int dt = 500;           //Delay between direction change of the rotation
 int motorSpeed = 10;
-int const sPr = 2048;   //Steps per revolution
+int const sPr = 2048;   //Steps per revolution (Specific for the 28BYJ-48)
 Stepper myStepper(sPr,8,10,9,11); //Wiring scheme that is related to this found in instructions.
 
 //Push Switch Variables//
