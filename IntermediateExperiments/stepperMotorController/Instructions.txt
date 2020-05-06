@@ -9,7 +9,7 @@ mainCircuit.png
 + Arduino USB cable
 + 3.3V/5V control board
 + 9V Battery holder with barrel jack plug
-+ 9v Battery
++ 9V Battery
 + Breadboard
 + 28BYJ-48 5V Step motor
 + Motor driver (specifically for the 28BYJ-48)
