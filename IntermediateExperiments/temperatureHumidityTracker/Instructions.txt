@@ -1,0 +1,53 @@
+This experiment was to successfully connect two switches to the Arduino that will control the direction of a stepper motor.
+Since this experiment will be considered intermediate, it will require a little more preparation than the other experiments
+found in the SimpleExperiments folder. After collecting the materials for the experiment, connect the circuits as done in
+mainCircuit.png
+
+//MATERIALS//
+-----------------------------------------------------------------------------------------------------------------------------
++ Arduino
++ Arduino USB cable
++ 3.3V/5V control board
++ 9V Battery holder with barrel jack plug
++ 9V Battery
++ Breadboard
++ 28BYJ-48 5V Step motor
++ Motor driver (specifically for the 28BYJ-48)
++ Push button switche x2
++ Various amounts of wires (As many as you want)
+
+
+//PROCEDURE//
+-----------------------------------------------------------------------------------------------------------------------------
+Step 1:
+Attach the 3.3V/5V control board to the Breadboard with its inbuilt pins, with the + and - pins in their respective
+breadboard pins. Ground the control board by connecting the - pin to the GND pin found on the Arduino.
+
+Step 2:
+Connect the motor driver - pin to the ground, and the + pin to the same positive pin that the 3.3V/5V control board is
+connected to. The pins IN1, IN2, IN3, IN4 on the motor driver must be connected to the Arduino pins 8, 9, 10, 11 respectively.
+
+Step 3:
+Connect the 28BYJ-48 to the motor driver. There is only one fashion to plugging this in and is fail proof, so you cant make
+the mistake of connecting it improperly.
+
+Step 4:
+Connect two push buttons like so in the circuit design provided as so.
+
+Step 5:
+Connect the 9V battery to its battery holder, then connect the barrel jack plug into the 3.3V/5V control board. Be sure to
+also connect the Arduino to the computer.
+
+Step 6:
+Upload the code provided in stepperMotorController.ino
+
+--Operating the circuit--
+
+Step 7:
+Press the power switch on the 3.3V/5V control board to turn on the motor, a green light should appear when done so.
+Press one of the switches and observe results.
+
+//RESULTS//
+-----------------------------------------------------------------------------------------------------------------------------
+The step motor will preform a 180 degree rotation once a button is pushed. Once the rotation is complete, another button
+press could be done to do another rotation. Direction of the rotation is dependent on the button.
