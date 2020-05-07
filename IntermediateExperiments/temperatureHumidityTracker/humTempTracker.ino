@@ -1,38 +1,38 @@
 /*
  * Author: Jason Hillinger
- * Title: Stepper Motor Controller
- * This experiment was made in attempt to create a circuit that works in the same fashion as a garage door opener. Press
- * button A and the motor rotates to one direction, press button B and the motor rotates in the opposite direction.
+ * Title: Humidity/Temperature tracker
+ * This code makes use of the LCD screen and DHT11 to measure the humidity and temperature in the room.
  */
- #include <Stepper.h>
- //Stepper Motor Variables//
- int dt = 500;           //Delay between direction change of the rotation
- int motorSpeed = 10;     //Motor speed, max=10, min=0
- int const sPr = 2048;   //Steps per revolution
- Stepper myStepper(sPr,8,10,9,11); //Wiring scheme that is related to this found in instructions.
+ #include "LiquidCrystal.h"
+ #include "DHT.h"
+ #define Type DHT11
 
- //Push Switch Variables//
- int switch0 = 2;
- int switch0Value;
- int switch1 = 3;
- int switch1Value;
+ //DHT Variables//
+ int dhtPin=2;
+ double humidity, temp;
 
+ //Object creation//
+ LiquidCrystal lcd(7,8,9,10,11,12);
+ DHT sensor(dhtPin,Type);
+
+ int dt = 1000;  //Update time measured in miliseconds
 
  void setup() {
- myStepper.setSpeed(motorSpeed);    //speed of motor defined here
- pinMode(switch1,OUTPUT);
- digitalWrite(switch1,HIGH);
- pinMode(switch0,OUTPUT);
- digitalWrite(switch0,HIGH);
+ lcd.begin(16,2);
+ sensor.begin();
  }
 
  void loop() {
-   switch0Value = digitalRead(switch0);
-   switch1Value = digitalRead(switch1);
-   if(!switch0Value){     //if switch0 is pressed, turn motor
-       myStepper.step(sPr);
-   }
-    if(!switch1Value){    //if switch1 is pressed, turn motor in opposite direction
-       myStepper.step(-sPr);
-    }
+  //lcd.setCursor(0,0);
+  humidity = sensor.readHumidity();  //reads humidity from DHT11
+  temp = sensor.readTemperature();   //reads temperature (in celcius) from DHT11. NOTE put true as this functions parameter to enable fahrenheit.
+  lcd.print("HUMIDITY: ");
+  lcd.print(humidity);
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("TEMP:     ");
+  lcd.print(temp);
+  lcd.print("C");
+  delay(dt);                         //This delay is to be used as a refresh rate.
+  lcd.clear();
  }
