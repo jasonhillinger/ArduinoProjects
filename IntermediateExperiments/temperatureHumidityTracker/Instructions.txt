@@ -18,7 +18,7 @@ PRECAUTION: This experiment will take a lot more of space to create, compared to
 So be sure to take this into consideration when designing your circuit on your breadboard.
 
 Step 1:
-Wire all the components as shown in their respective circuit diagrams. If you do not have a resistor near 5000Ω, you could
+Wire all the components as shown in their respective circuit diagrams (See circuitDesign.png). If you do not have a resistor near 5000Ω, you could
 use various resistors in parallel to possibly obtain the same resistance. I did not have a 5000Ω resistor, so I used two
 10000Ω in parallel.
 
