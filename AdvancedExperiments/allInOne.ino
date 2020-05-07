@@ -1,7 +1,8 @@
 //The idea behind this experiment was to incorporate as many things that I learnt within the Arduino world into one project.
-//This is made to measure a distance with the use of a HC-SR04, but one a push button is pressed (on the breadboard), the function
-//of the Arduino switches to measuring the humidity and temperature. The results are shown through the LCD attached to the Arduino.
-//As a bonus this also plots the information being recorded in real time through the Arduino Serial plotter (CTRL+SHIFT+L).
+//This is made to measure a distance with the use of a HC-SR04, but one a push button is pressed (on the breadboard), the
+//function of the Arduino switches to measuring the humidity and temperature. The results are shown through the LCD attached
+//to the Arduino. As a bonus this also plots the information being recorded in real time through the Arduino Serial
+//plotter (CTRL+SHIFT+L).
 
 
 #include "LiquidCrystal.h"
@@ -40,7 +41,8 @@ void setup() {
 
 void humidTemp(){
  humidity = sensor.readHumidity();  //reads humidity from DHT11
- temp = sensor.readTemperature();   //reads temperature (in celcius) from DHT11. NOTE put true as this functions parameter to enable fahrenheit.
+ //NOTE put true as this functions parameter to enable fahrenheit.
+ temp = sensor.readTemperature();   //reads temperature (in celcius) from DHT11.
  lcd.print("HUMIDITY: ");
  lcd.print(humidity);
  lcd.print("%");
