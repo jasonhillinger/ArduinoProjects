@@ -90,6 +90,7 @@ void loop() {
   //Serial.println(digitalRead(switchPin));
   //delay(250);
 
+//This is where the buttons value is evaluated, in order to change the function of the program.
   while(presentState){
     findDistance();
     presentState = digitalRead(switchPin);
