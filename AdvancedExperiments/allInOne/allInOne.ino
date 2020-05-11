@@ -1,3 +1,5 @@
+//Author: Jason Hillinger
+//Title: All in One
 //The idea behind this experiment was to incorporate as many things that I learnt within the Arduino world into one project.
 //This is made to measure a distance with the use of a HC-SR04, but one a push button is pressed (on the breadboard), the
 //function of the Arduino switches to measuring the humidity and temperature. The results are shown through the LCD attached
