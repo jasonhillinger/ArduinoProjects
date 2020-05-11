@@ -1,0 +1,2 @@
+This experiment is an extension of the temperatureHumidityTracker experiment.
+Its adds a measuring function to it //TO BE COMPLETED
