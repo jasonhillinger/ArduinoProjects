@@ -1,2 +1,42 @@
-This experiment is an extension of the temperatureHumidityTracker experiment.
-Its adds a measuring function to it //TO BE COMPLETED
+This experiment is an extension of the temperatureHumidityTracker experiment. Its adds a measuring function to it by using
+the HC-SR04. Also notice that this program makes use of the Arduino's IDE built in plotter, and it plots the results on a
+graph. These graphs can be seen through the IDE by pressing CTRL+SHIFT+L.
+
+Create the circuit found in this folder (circuitDesign0.png). Upload the allInOne.ino to the Arduino.
+
+Notice that this circuit design is just an extension of the temperatureHumidityTracker. The functionality of the circuit
+will be changed through the code though.
+
+Once these steps are completed connect the Arduino to its 5V power source. The distance detected from the HC-SR04 will be
+displayed on the LCD screen. When the button is held down, it will now display the humidity and temperature of the room.
+
+//MATERIALS//
+-----------------------------------------------------------------------------------------------------------------------------
++ Arduino
++ Arduino USB cable
++ Potentiometer
++ LCD with Hitachi HD44780 driver
++ DHT11
++ ~5000Ω Resistor (or equivalent)
++ Breadboard
++ Various amounts of wires (As many as you want)
++ Push switch
++ HC-SR04
+
+//RESULTS//
+-----------------------------------------------------------------------------------------------------------------------------
+The LCD screen displays:
+
+This display is shown with a business card 9cm in front of the HC-SR04.
+
+******************
+*DISTANCE: 9cm   *
+*                *
+******************
+
+This display is shown when the button is pressed:
+
+******************
+*HUMIDITY: 33.00%*
+*TEMP:     23.10C*
+******************

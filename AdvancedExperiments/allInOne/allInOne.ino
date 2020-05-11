@@ -4,7 +4,6 @@
 //to the Arduino. As a bonus this also plots the information being recorded in real time through the Arduino Serial
 //plotter (CTRL+SHIFT+L).
 
-
 #include "LiquidCrystal.h"
 #include "DHT.h"
 #define Type DHT11
